@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f4">
+    <meta
+      name="description"
+      content="Meet EduHelpdesk: a configurable education IT platform for helpdesk tickets, assets, parts, loans, onboarding and projects."
+    >
+    <title>EduHelpdesk — Education IT, organised</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="helpdesk.css">
+    <script src="download-links.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="helpdesk-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="EduTools home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M6 8.5C10.5 7.5 14 9 16 11.5c2-2.5 5.5-4 10-3v15c-4.5-1-8-.1-10 2.5-2-2.6-5.5-3.5-10-2.5v-15Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M16 12v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>edu<span class="brand-accent">tools</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Toggle navigation menu</span>
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="index.html#tools">All tools</a>
+          <a href="#modules">Modules</a>
+          <a href="#features">Features</a>
+          <a href="#deployment">Deployment</a>
+          <a class="nav-cta" href="#get-started">Get EduHelpdesk <span aria-hidden="true">↓</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="helpdesk-hero section-shell">
+        <div class="container helpdesk-hero-grid">
+          <div class="helpdesk-hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> The education IT operations platform</p>
+            <h1>One place to keep your <span>IT moving.</span></h1>
+            <p>EduHelpdesk brings service desk work and day-to-day IT operations together: tickets, assets, parts, loans, onboarding and projects — in a platform designed to be shaped around your organisation.</p>
+            <div class="helpdesk-actions">
+              <a class="button button-primary helpdesk-primary" href="#modules">Explore the platform <span aria-hidden="true">↓</span></a>
+              <a class="helpdesk-secondary is-disabled" id="helpdesk-docs" aria-disabled="true" tabindex="-1">
+                <span class="download-label">Documentation link coming soon</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div class="helpdesk-hero-footnote">
+              <span aria-hidden="true">✳</span>
+              <span>Runs as a Windows service · SQLite database · Configurable to your needs</span>
+            </div>
+          </div>
+          <div class="helpdesk-hero-art" aria-label="Illustration of an IT helpdesk dashboard">
+            <div class="helpdesk-orbit"></div>
+            <div class="helpdesk-dashboard">
+              <div class="dashboard-top">
+                <span class="dashboard-mark">H</span>
+                <span class="dashboard-title">EduHelpdesk</span>
+                <span class="dashboard-subtitle">SERVICE DESK</span>
+              </div>
+              <div class="dashboard-metrics">
+                <div class="dashboard-metric"><strong>Tickets</strong><span>Service desk</span></div>
+                <div class="dashboard-metric"><strong>Assets</strong><span>Inventory</span></div>
+                <div class="dashboard-metric"><strong>Projects</strong><span>Planning</span></div>
+              </div>
+              <div class="dashboard-tickets">
+                <div class="dashboard-ticket"><span class="ticket-status"></span><span class="dashboard-ticket-text">IT requests &amp; support</span><small>Helpdesk</small></div>
+                <div class="dashboard-ticket"><span class="ticket-status ticket-open"></span><span class="dashboard-ticket-text">Equipment &amp; asset tracking</span><small>Inventory</small></div>
+                <div class="dashboard-ticket"><span class="ticket-status ticket-done"></span><span class="dashboard-ticket-text">Projects &amp; proposals</span><small>Projects</small></div>
+              </div>
+            </div>
+            <span class="hero-platform-tag">One platform. Your way.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="helpdesk-overview section-shell" id="modules">
+        <div class="container">
+          <div class="helpdesk-section-heading">
+            <p class="eyebrow">The platform</p>
+            <h2>More than a ticket queue.<br><span>Your whole IT operation.</span></h2>
+            <p>Bring connected support and operational work into one place, from the first help request to equipment, people and planned projects.</p>
+          </div>
+          <div class="module-grid">
+            <article class="module-card">
+              <span class="module-icon" aria-hidden="true">⌕</span>
+              <h3>Helpdesk</h3>
+              <p>Manage support requests with custom ticket templates, print-ready job sheets, and quick ticket sheets.</p>
+            </article>
+            <article class="module-card">
+              <span class="module-icon" aria-hidden="true">▦</span>
+              <h3>Asset inventory</h3>
+              <p>Keep track of equipment and print labels to support day-to-day asset handling.</p>
+            </article>
+            <article class="module-card">
+              <span class="module-icon" aria-hidden="true">⚙</span>
+              <h3>Part inventory</h3>
+              <p>Manage the parts and supplies your technicians need to keep devices and services running.</p>
+            </article>
+            <article class="module-card">
+              <span class="module-icon" aria-hidden="true">↗</span>
+              <h3>Loan management</h3>
+              <p>Coordinate equipment loans alongside the rest of your support and inventory work.</p>
+            </article>
+            <article class="module-card">
+              <span class="module-icon" aria-hidden="true">＋</span>
+              <h3>Onboarding</h3>
+              <p>Support the process of bringing staff into your organisation and getting them set up.</p>
+            </article>
+            <article class="module-card">
+              <span class="module-icon" aria-hidden="true">◫</span>
+              <h3>Projects</h3>
+              <p>Track project spending bands, manage quotes, and print proposals for review.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="helpdesk-capabilities section-shell" id="features">
+        <div class="container">
+          <div class="helpdesk-section-heading">
+            <p class="eyebrow">Designed for real operations</p>
+            <h2>Useful workflows.<br><span>Thoughtful control.</span></h2>
+            <p>Keep staff and technicians connected, retain an audit trail, and adapt the experience and paperwork to how your team works.</p>
+          </div>
+          <div class="capability-grid">
+            <article class="capability-card">
+              <h3><span aria-hidden="true">▤</span> Support &amp; communication</h3>
+              <ul class="capability-list">
+                <li>Staff portal</li>
+                <li>Desktop notifications</li>
+                <li>Microsoft Teams webhooks</li>
+                <li>Import users and technicians</li>
+                <li>Import from Spiceworks CHD</li>
+                <li>Audit logs</li>
+              </ul>
+            </article>
+            <article class="capability-card">
+              <h3><span aria-hidden="true">▧</span> Documents &amp; print</h3>
+              <ul class="capability-list">
+                <li>Print asset labels</li>
+                <li>Print job sheets</li>
+                <li>Print quick ticket sheets</li>
+                <li>Custom ticket print templates</li>
+                <li>Project proposals and quotes</li>
+                <li>Documentation available</li>
+              </ul>
+            </article>
+            <article class="capability-card">
+              <h3><span aria-hidden="true">◈</span> Database &amp; continuity</h3>
+              <ul class="capability-list">
+                <li>SQLite database</li>
+                <li>Database backup support</li>
+                <li>Demo data on first install</li>
+                <li>Remove demo data to go live</li>
+                <li>Audit visibility</li>
+                <li>Windows service installation</li>
+              </ul>
+            </article>
+            <article class="capability-card">
+              <h3><span aria-hidden="true">✳</span> Branding &amp; configuration</h3>
+              <ul class="capability-list">
+                <li>Brand the staff-facing experience</li>
+                <li>Customise ticket templates</li>
+                <li>Adapt settings to your organisation</li>
+                <li>Configure printed documents</li>
+                <li>Certificate options during setup</li>
+                <li>More features on the way</li>
+              </ul>
+            </article>
+          </div>
+          <div class="deployment-band" id="deployment">
+            <div>
+              <h3>Install on your Windows server</h3>
+              <p>Setup installs EduHelpdesk as a Windows service. During installation, choose a self-signed certificate or another certificate already installed on the server.</p>
+            </div>
+            <div class="deployment-options" aria-label="Platform details">
+              <span>Windows service</span>
+              <span>SQLite</span>
+              <span>Self-signed certificate option</span>
+              <span>Use an installed certificate</span>
+              <span>Demo data for initial setup</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="helpdesk-customization section-shell">
+        <div class="container customization-grid">
+          <div class="customization-copy">
+            <p class="eyebrow">Make it yours</p>
+            <h2>Flexible enough to fit <span>your team.</span></h2>
+            <p>EduHelpdesk is designed to be extensively customisable. Shape the branding, workflows, settings, ticket templates and printed outputs to fit the way your organisation works.</p>
+            <p>Projects also includes spending bands, quote management and proposal printing, helping teams keep planned work visible alongside support operations.</p>
+          </div>
+          <div class="customization-list">
+            <div class="customization-item"><span aria-hidden="true">Aa</span>Branding</div>
+            <div class="customization-item"><span aria-hidden="true">▤</span>Ticket templates</div>
+            <div class="customization-item"><span aria-hidden="true">⚙</span>Settings &amp; workflows</div>
+            <div class="customization-item"><span aria-hidden="true">▣</span>Print layouts</div>
+            <div class="customization-item"><span aria-hidden="true">£</span>Project spending bands</div>
+            <div class="customization-item"><span aria-hidden="true">✓</span>Quote management</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="helpdesk-next section-shell" id="get-started">
+        <div class="container next-grid">
+          <div class="next-copy">
+            <p class="eyebrow">Explore EduHelpdesk</p>
+            <h2>Get the details and see what’s possible.</h2>
+            <p>Documentation is available for the platform. Set the documentation and installer URLs in the shared download-links.js file when you’re ready to publish them.</p>
+          </div>
+          <div class="next-links">
+            <a class="button button-primary" id="helpdesk-download" aria-disabled="true" tabindex="-1">
+              <span class="download-label">Installer link coming soon</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="next-doc-link is-disabled" id="helpdesk-docs-bottom" aria-disabled="true" tabindex="-1">
+              <span class="download-label">Documentation link coming soon</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section section-shell">
+        <div class="container">
+          <div class="disclosure">
+            <span class="disclosure-icon" aria-hidden="true">i</span>
+            <p><strong>About how it’s made:</strong> EduHelpdesk, like the other tools here, is software generated by AI from prompts I provide. I bring the education IT experience, requirements and direction; I do not claim to have programmed or independently authored the software.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand footer-brand" href="index.html" aria-label="EduTools home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 8.5C10.5 7.5 14 9 16 11.5c2-2.5 5.5-4 10-3v15c-4.5-1-8-.1-10 2.5-2-2.6-5.5-3.5-10-2.5v-15Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 12v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <span>edu<span class="brand-accent">tools</span></span>
+        </a>
+        <p>Practical tools for the people who make education work.</p>
+        <a class="footer-up" href="#" aria-label="Back to top">↑</a>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year">2026</span> EduTools</span>
+        <a href="index.html" class="footer-return">Back to all tools</a>
+        <span>Made with AI. Shared with clarity.</span>
+      </div>
+    </footer>
+  </body>
+</html>
